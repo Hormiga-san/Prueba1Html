@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="navcat">Formulario de datos</h1>
+    <br>
+    <fieldset class="cuerpo">
+        <legend>Datos personales</legend>
+        <form action="">
+            Rut <br>
+            <input type="text" name="rut" id="rut" maxlength="10" minlength="10" placeholder="11111111-k" required> <!--determina la longitud de ingreso y la forma de ingreso-->
+            <br>
+            Nombre <br>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre Apellido1 Apellido2" required>
+            <br>
+            Edad <br>
+            <input type="number" name="" id="" max="70" min="18" required>
+            <br>
+            Fecha <br>
+            <input type="date" name="" id="" required>
+            <br>
+            Genero <br>
+            <input type="radio" name="Genero" id="" value="Masculino">Masculino<br>
+            <input type="radio" name="Genero" id="" value="Femenino">Femenino<br>
+            <input type="radio" name="Genero" id="" value="No binario">No binario<br>
+            <br>
+            
+        </form>
+
+    </fieldset>
+    <fieldset class="cuerpo">
+        <legend>Datos de carrera</legend><br>
+        <form action="">
+        <!--Utiliza select para agregar 5 carreras a seleccionar
+             utiliza checkbox ofrecer 4 tipos de deportes a practicar
+              utiliza radio ofrecer 5 dias a seleccionar para un dia libre en la semana-->
+              Carrera:
+        <select name="Carrera" id="">
+            <option value="Analista programador">Analista programador</option>
+            <option value="Mecanica">Mecanica</option>
+            <option value="Enfermeria">Enfermeria</option>
+            <option value="Administracion">Administracion</option>
+            <option value="Doctor">Doctor</option>
+        </select><br><br>
+        Seleccione deportes a practicar:
+        <br>
+        <input type="checkbox" id="" name="Basquet" value="Basquet">Basquet<br>
+        <input type="checkbox" id="" name="Futbol" value="Futbol">Futbol<br>
+        <input type="checkbox" id="" name="Natacion" value="Natacion">Natacion<br>
+        <input type="checkbox" id="" name="Ping-pong" value="Beisbol">Ping-pong<br>
+        <br>
+        Seleccione un dia:
+        <br>
+        <input type="radio" id="" name="dia" value="Lunes"> Lunes<br>
+        <input type="radio" id="" name="dia" value="Martes">Martes<br>
+        <input type="radio" id="" name="dia" value="Miercoles">Miercoles<br>
+        <input type="radio" id="" name="dia" value="Jueves">Jueves<br>
+        <input type="radio" id="" name="dia" value="Viernes">Viernes<br>
+
+        
+
+        </form>
+        
+    </fieldset>
+    <fieldset class="cuerpo">
+        <legend>Consultas</legend>
+        Escriba su consulta: <br>
+        <textarea name="consulta" id="" cols="30" rows="10" role="none"></textarea>
+    </fieldset>
+    <br>
+    <input type="submit" value="Enviar">
+</body>
+</html>
